@@ -180,21 +180,105 @@ a {
 
 /* nav Styling */
 
-#project {
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-listing {
     font-size: 2rem;
     color: var(--teal);
-    display:flex;
+    margin: 45px auto 40px;
     width: fit-content;
     padding: 5px 25px;
     border-radius: 15px;
     border: 5px solid var(--muted);
     transition-duration: 1s;
-    transition-property: background-color, color;
+    transition-property: background-color, color, padding;
 }
 
-#project:hover {
+.project-listing:hover {
     background-color: var(--teal);
     color: white;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+#project-listing {
+    padding-inline-start: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    list-style-type: none;
+}
+
+#project-listing li a {
+    transition-duration: 1s;
+    transition-property: background-color, padding, box-shadow;
+}
+
+#project-listing li:hover a {
+    background-color: rgb(80, 136, 249);
+    padding: 20px 90px 20px 90px;
+    box-shadow: var(--box-shadowing-blue);
+
+}
+
+#code-refactor-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--blackboard);
+    padding: 10px 130px 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+#sign-up-page-design-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--teal);
+    padding: 10px 10px 10px 130px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#css-cheatsheet-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--muted);
+    padding: 10px 130px 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#personal-portfolio-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--pink);
+    padding: 10px 10px 10px 130px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#javascript-project-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--peach);
+    padding: 10px 130px 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#upcoming-project-link {
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--salmon);
+    padding: 10px 10px 10px 130px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -257,8 +341,6 @@ footer:hover::after {
         border-radius: 0px 35px 35px 0px;
     }
 
-    /* fix sidebar layout here */
-
     .sidebar {
         width: 100%;
         margin: 10px auto 20px;
@@ -291,6 +373,51 @@ footer:hover::after {
         margin-left: 40px;
     }
 
+    .project-listing {
+        margin: 10px auto 40px;
+    }
+
+    #code-refactor-link {
+        background-color: var(--blackboard);
+        padding: 10px 70px 10px 70px;
+    
+    }
+    
+    #sign-up-page-design-link {
+        background-color: var(--teal);
+        padding: 10px 70px 10px 70px;
+
+    }
+    
+    #css-cheatsheet-link {
+        background-color: var(--muted);
+        padding: 10px 70px 10px 70px;
+
+    }
+    
+    #personal-portfolio-link {
+        background-color: var(--pink);
+        padding: 10px 70px 10px 70px;
+
+    }
+    
+    #javascript-project-link {
+        background-color: var(--peach);
+        padding: 10px 70px 10px 70px;
+
+    }
+
+    #upcoming-project-link {
+        background-color: var(--salmon);
+        padding: 10px 70px 10px 70px;
+
+    }
+
+    #project-listing li:hover a {
+        transition: none;
+        padding: 10px 70px 10px 70px;
+        box-shadow: none;
+    }
 
 
     footer {
