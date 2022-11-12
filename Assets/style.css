@@ -178,7 +178,7 @@ a {
     transition-property: padding, color, font-size;
 }
 
-/* nav Styling */
+/* nav/ Project Listing Styling */
 
 .projects {
     display: flex;
@@ -194,26 +194,18 @@ a {
     padding: 5px 25px;
     border-radius: 15px;
     border: 5px solid var(--muted);
-    transition-duration: 1s;
-    transition-property: background-color, color, padding;
-}
-
-.project-listing:hover {
-    background-color: var(--teal);
-    color: white;
-    padding: 5px 40px;
-    cursor: pointer;
 }
 
 #project-listing {
+    display: flex;
     padding-inline-start: 0px;
     width: 100%;
-    display: flex;
     flex-direction: column;
     row-gap: 40px;
     align-items: center;
     list-style-type: none;
 }
+
 
 #project-listing li a {
     transition-duration: 1s;
@@ -282,8 +274,121 @@ a {
     cursor: pointer;
 }
 
+hr {
+    margin: 30px auto;
+    height: 5px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: grey;
+}
+/* Project Content Section Styling */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.wrapper-1 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--salmon);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+}
+
+.wrapper-2 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--peach);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+    
+}
+
+.wrapper-3 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--pink);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+}
+
+.wrapper-4 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--muted);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+}
+
+.wrapper-5 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--teal);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+}
+
+.wrapper-6 {
+    width: 80%;
+    height:fit-content;
+    background-color: var(--blackboard);
+    border: 5px solid rgba(128, 128, 128, 0.6);
+    border-radius: 35px 0 35px 0;
+    transition-duration: 1s;
+    transition-property: width, padding, box-shadow;
+}
+
+.project-title {
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.6);
+    width:fit-content;
+    padding: 5px 20px 5px 10px;
+    border-radius: 0px 35px 35px 0px;
+}
+
+.project-content div:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 95%;
+    box-shadow: 8px 8px 8px grey;
+
+}
+
+.repo-link {
+
+    padding: 10px 0px;
+    margin: 30px 20px;
+}
+
+
+
  
 
+
+#back-to-top {
+    font-size: 1rem;
+    color: var(--teal);
+    margin: 10px auto 10px;
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 5px solid var(--muted);
+}
 
 /* Footer Styling */
 
@@ -379,43 +484,43 @@ footer:hover::after {
 
     #code-refactor-link {
         background-color: var(--blackboard);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
     
     }
     
     #sign-up-page-design-link {
         background-color: var(--teal);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
 
     }
     
     #css-cheatsheet-link {
         background-color: var(--muted);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
 
     }
     
     #personal-portfolio-link {
         background-color: var(--pink);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
 
     }
     
     #javascript-project-link {
         background-color: var(--peach);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
 
     }
 
     #upcoming-project-link {
         background-color: var(--salmon);
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
 
     }
 
     #project-listing li:hover a {
         transition: none;
-        padding: 10px 70px 10px 70px;
+        padding: 10px 50px 10px 50px;
         box-shadow: none;
     }
 
