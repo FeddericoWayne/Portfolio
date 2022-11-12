@@ -178,6 +178,28 @@ a {
     transition-property: padding, color, font-size;
 }
 
+/* nav Styling */
+
+#project {
+    font-size: 2rem;
+    color: var(--teal);
+    display:flex;
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 5px solid var(--muted);
+    transition-duration: 1s;
+    transition-property: background-color, color;
+}
+
+#project:hover {
+    background-color: var(--teal);
+    color: white;
+    cursor: pointer;
+}
+
+ 
+
 
 /* Footer Styling */
 
