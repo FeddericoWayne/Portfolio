@@ -1,0 +1,244 @@
+:root {
+    --salmon: #FE8268;
+    --peach: #FAAB9A;
+    --pink: #FFCCBE;
+    --muted: #ABC7CA;
+    --teal: #79B3B4;
+    --blackboard: #153030;
+    --box-shadowing-pink: 6px 6px 3px grey, inset 7px 7px 6px rgb(255, 239, 246);
+    --box-shadowing-blue: 6px 6px 3px grey, inset 7px 7px 6px rgb(211, 226, 255);
+}
+
+* {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: auto;
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
+    background-position: top;
+    color: var(--salmon);
+    border-radius: 35px 35px 35px 35px;
+    transition-duration: 1s;
+    transition-property: box-shadow, width, background-color, background-image, border-radius;
+    
+}
+
+h1 {
+    height:fit-content;
+    font-size: 4em;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 10px 20px 10px 20px;
+    transition-duration: 1s;
+    transition-property: background-color, border-radius;
+}
+
+header img {
+    position:relative;
+    top: 30px;
+    width: 180px;
+    border-radius: 150px;
+    margin: 0px 20px 0px;
+    transition-duration: 1s;
+    transition-property: width, box-shadow;
+}
+
+header:hover {
+    box-shadow: var(--box-shadowing-blue);
+    border-radius: 10px;
+    width: 100%;
+}
+
+header:hover img {
+    width: 250px;
+    box-shadow: 6px 6px 3px rgba(128, 128, 128, 0.6);
+}
+
+header:hover h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0px 35px 35px 0px;
+}
+
+/* Main Content Layout Styling */
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* Sidebar Styling */
+
+.sidebar:hover {
+    background-color: var(--pink);
+    color:rgba(128, 128, 128);
+    box-shadow: var(--box-shadowing-pink);
+}
+
+.sidebar li:hover {
+    color: var(--blackboard);
+    font-size: 1.5em;
+    padding: 0px 20px 0px 0px;
+    cursor: pointer;
+ }
+
+#email, #phone, #address, #bio-page, #resume {
+    color: var(--blackboard);
+    font-size: 1rem;
+    display:none;
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info:hover #email {
+    display: flex;
+}
+
+.contact-info:hover #phone {
+    display: flex;
+}
+
+.contact-info:hover #address {
+    display: flex;
+}
+
+.bio:hover #bio-page {
+    display: flex;
+}
+
+.bio:hover #resume {
+    display: flex;
+}
+
+.social-media {
+    margin: 2em 0 1em;
+    transition-duration: 0.5s;
+    transition-property: padding, color, font-size; 
+}
+
+.social-media:hover {
+    color: var(--blackboard);
+    font-size: 1.5rem;
+    padding: 0px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.social-media-account li {
+    margin: 12px 0;
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.social-media-account li:hover {
+    transform: scale(1.5) translateX(10px);
+}
+
+.sidebar ul {
+    position: relative;
+    left: -30px;
+    list-style-type: none;
+}
+
+.sidebar {
+  margin: 20px 20px 0px 0px;
+  border-radius: 0 35px 35px 0;
+  width: fit-content;
+  background-color: var(--peach);
+  color: white;
+  transition-duration: 1s;
+  transition-property: background-color, color, padding, box-shadow;
+}
+
+.contact-info, .bio {
+    margin: 2em 0 2em;
+    transition-duration: 0.5s;
+    transition-property: padding, color, font-size;
+}
+
+
+/* Footer Styling */
+
+footer {
+    margin: 20px auto 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 95%;
+    background-color: var(--peach);
+    border-radius: 35px 35px 35px 35px;
+    transition-duration: 1s;
+    transition-property: box-shadow, width, border-radius;
+    
+}
+
+footer h4 {
+    width:fit-content;
+    margin: auto;
+    color: white;
+    padding: 30px;
+}
+
+footer:hover {
+    box-shadow: var(--box-shadowing-pink);
+    border-radius: 10px;
+    width: 100%;
+}
+
+footer:hover::after {
+    content: "Thanks for viewing!";
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    color: white;
+    
+}
+
+/* Media Queries for Mobile and Tablet */
+
+@media screen and (max-width:560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 0px 35px 35px 0px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 10px auto 20px;
+        border-radius: 35px;
+
+    }
+
+    /* fix sidebar layout here */
+
+    footer {
+        box-shadow: var(--box-shadowing-pink);
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
+
