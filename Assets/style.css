@@ -5,12 +5,17 @@
     --muted: #ABC7CA;
     --teal: #79B3B4;
     --blackboard: #153030;
+    --keylime: rgb(250, 250, 159);
     --box-shadowing-pink: 6px 6px 3px grey, inset 7px 7px 6px rgb(255, 239, 246);
     --box-shadowing-blue: 6px 6px 3px grey, inset 7px 7px 6px rgb(211, 226, 255);
 }
 
 * {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+body {
+    background-color: rgb(250, 250, 159);
 }
 
 /* Header Styling */
@@ -33,7 +38,7 @@ header {
 }
 
 h1 {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--keylime);
     border-radius: 0px 35px 35px 0px;
     height:fit-content;
     font-size: 4em;
@@ -66,7 +71,7 @@ header:hover img {
 }
 
 header:hover h1 {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(250, 250, 159, 0.4);
     border-radius: 0px 35px 35px 0px;
 }
 
@@ -163,13 +168,13 @@ a {
 }
 
 .sidebar {
-  margin: 20px 20px 0px 0px;
-  border-radius: 0 35px 35px 0;
-  width: fit-content;
-  background-color: var(--peach);
-  color: white;
-  transition-duration: 1s;
-  transition-property: background-color, color, padding, box-shadow;
+    margin: 20px 20px 0px 0px;
+    border-radius: 0 35px 35px 0;
+    width: fit-content;
+    background-color: var(--peach);
+    color: white;
+    transition-duration: 1s;
+    transition-property: background-color, color, padding, box-shadow;
 }
 
 .contact-info, .bio {
@@ -209,10 +214,11 @@ a {
 
 #project-listing li a {
     transition-duration: 1s;
-    transition-property: background-color, padding, box-shadow;
+    transition-property: background-color, padding, box-shadow, color;
 }
 
 #project-listing li:hover a {
+    color: white;
     background-color: rgb(80, 136, 249);
     padding: 20px 90px 20px 90px;
     box-shadow: var(--box-shadowing-blue);
@@ -221,7 +227,7 @@ a {
 
 #code-refactor-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--blackboard);
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
@@ -231,7 +237,7 @@ a {
 
 #sign-up-page-design-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--teal);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
@@ -240,7 +246,7 @@ a {
 
 #css-cheatsheet-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--muted);
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
@@ -249,7 +255,7 @@ a {
 
 #personal-portfolio-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--pink);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
@@ -258,7 +264,7 @@ a {
 
 #javascript-project-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--peach);
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
@@ -267,7 +273,7 @@ a {
 
 #upcoming-project-link {
     font-size: 1.5em;
-    color: white;
+    color: var(--keylime);
     background-color: var(--salmon);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
@@ -448,12 +454,9 @@ hr {
     background-color: rgba(128, 128, 128, 0.6);
 }
 
+/* End of Page Links Styling */
 
-
- 
-
-
-#back-to-top, #github {
+#github {
     font-size: 1rem;
     color: var(--teal);
     margin: 10px auto 10px;
@@ -462,6 +465,21 @@ hr {
     border-radius: 15px;
     border: 5px solid var(--muted);
 }
+
+#back-to-top {
+    font-size: 1rem;
+    color: var(--teal);
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    border: 3px solid var(--muted);
+    position: fixed;
+    right: 5px;
+    top:75%;
+    height:fit-content;
+}
+
 
 /* Footer Styling */
 
@@ -515,7 +533,7 @@ footer:hover::after {
     }
 
     header h1 {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--keylime);
         border-radius: 0px 35px 35px 0px;
     }
 
@@ -592,7 +610,6 @@ footer:hover::after {
     }
 
     #project-listing li:hover a {
-        transition: none;
         padding: 10px 50px 10px 50px;
         box-shadow: none;
     }
