@@ -725,6 +725,14 @@ footer:hover::after {
     }
 
 
+    .project-content div:active {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 95%;
+        box-shadow: 8px 8px 8px grey;
+    
+    }
+
     .wrapper-1:active img {
         max-width: 90%;
         border-radius: 5px;
