@@ -725,6 +725,20 @@ footer:hover::after {
     }
 
 
+    .wrapper-1:active img {
+        max-width: 90%;
+        border-radius: 5px;
+        box-shadow: 6px 6px 6px grey;
+    }
+    .wrapper-1:active {
+        border: 5px solid rgba(255, 255, 255);
+    }
+    .wrapper-1:active .project-title {
+        color: grey;
+        background-color: white;
+    }
+
+
     footer {
         box-shadow: var(--box-shadowing-pink);
         border-radius: 10px;
