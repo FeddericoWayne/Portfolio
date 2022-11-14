@@ -310,7 +310,7 @@ hr {
     border-radius: 35px 0 35px 0;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
 }
 
 .wrapper-2 {
@@ -321,7 +321,7 @@ hr {
     border-radius: 0px 35px 0px 35px;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
     
 }
 
@@ -333,7 +333,7 @@ hr {
     border-radius: 35px 0 35px 0;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
 }
 
 .wrapper-4 {
@@ -344,7 +344,7 @@ hr {
     border-radius: 0px 35px 0px 35px;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
 }
 
 .wrapper-5 {
@@ -355,7 +355,7 @@ hr {
     border-radius: 35px 0 35px 0;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
 }
 
 .wrapper-6 {
@@ -366,7 +366,7 @@ hr {
     border-radius: 0px 35px 0px 35px;
     padding-bottom: 25px;
     transition-duration: 1s;
-    transition-property: width, padding, box-shadow;
+    transition-property: width, padding, box-shadow, border;
 }
 
 .project-title {
@@ -376,6 +376,8 @@ hr {
     width:fit-content;
     padding: 5px 20px 5px 10px;
     border-radius: 0px 35px 35px 0px;
+    transition-duration: 1s;
+    transition-property: background-color, color;
 }
 
 .project-content div:hover {
@@ -449,6 +451,51 @@ hr {
     box-shadow: 6px 6px 6px grey;
 }
 
+.wrapper-1:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+.wrapper-2:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+
+.wrapper-3:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+.wrapper-4:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+.wrapper-5:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+.wrapper-6:hover {
+    border: 5px solid rgba(255, 255, 255);
+}
+
+.wrapper-1:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+.wrapper-2:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+.wrapper-3:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+.wrapper-4:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+.wrapper-5:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+.wrapper-6:hover .project-title {
+    color: grey;
+    background-color: white;
+}
+
 .repo-link {
     margin-top: 20px;
     padding: 10px 27px 10px 42px;
@@ -456,8 +503,8 @@ hr {
     cursor: pointer;
     color: white;
     background-color: rgba(128, 128, 128, 0.6);
-    transition-duration: 1s;
-    transition-property: padding;
+    transition-duration: 0.1s;
+    transition-property: padding, 
 }
 
 @keyframes appear {
@@ -484,6 +531,11 @@ hr {
 
 .repo-link:hover {
     padding: 10px 45px;
+}
+
+.repo-link:active {
+    color: grey;
+    background-color: white;
 }
 
 
@@ -513,6 +565,8 @@ hr {
     transform: translateY(4px);
 }
 
+/* Back-to-Top Button Styling */
+
 #back-to-top {
     font-size: 1rem;
     color: var(--teal);
@@ -525,6 +579,15 @@ hr {
     right: 5px;
     top:75%;
     height:fit-content;
+}
+
+#back-to-top:hover {
+    color: white;
+    background-color: var(--teal);
+}
+
+#back-to-top:active {
+    transform: translateY(4px);
 }
 
 
