@@ -1,3 +1,5 @@
+/* variants */
+
 :root {
     --salmon: #FE8268;
     --peach: #FAAB9A;
@@ -85,32 +87,56 @@ main {
 
 /* Sidebar Styling */
 
+.sidebar {
+    margin: 20px 20px 0px 0px;
+    border-radius: 0 35px 35px 0;
+    width: fit-content;
+    background-color: var(--peach);
+    color: white;
+    transition-duration: 1s;
+    transition-property: background-color, padding, box-shadow;
+}
+
+.sidebar ul {
+    position: relative;
+    left: -30px;
+    list-style-type: none;
+}
+
 .sidebar:hover {
-    background-color: var(--pink);
-    color:rgba(128, 128, 128);
+    background-color: white;
     box-shadow: var(--box-shadowing-pink);
 }
 
-.sidebar li:hover {
-    color: var(--blackboard);
-    font-size: 1.5em;
-    padding: 0px 0px 0px 0px;
-    cursor: pointer;
- }
-
- 
-
-#email, #phone, #address, #bio-page, #resume {
-    color: var(--blackboard);
-    font-size: 1rem;
-    display:none;
+#resume, .social-media, .contact-info {
     transition-duration: 1s;
-    transition-property: transform;
+    transition-property: color, font-size;
 }
 
-.bio > a {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+ .sidebar:hover li {
+    color: grey;
+ }
+
+.sidebar:hover #resume {
+    color: grey;
+}
+
+#resume:hover {
+    font-size: 1.5rem;
+}
+
+.social-media:hover {
+    font-size: 1.5em;
+}
+
+.contact-info:hover {
+    font-size: 1.5em;
+}
+
+#email, #phone, #address {
+    color: grey;
+    font-size: 1rem;
+    display:none;
 }
 
 a {
@@ -130,23 +156,15 @@ a {
     display: flex;
 }
 
-.bio:hover #bio-page {
-    display: flex;
-}
-
-.bio:hover #resume {
-    display: flex;
-}
 
 .social-media > h4 {
     margin: 2em 0 1em;
-    transition-duration: 0.5s;
-    transition-property: padding, color, font-size; 
+    transition-duration: 1s;
+    transition-property: color;
 }
 
 .social-media:hover {
     color: var(--blackboard);
-    font-size: 1.5rem;
     padding: 0px 20px 0px 0px;
     cursor: pointer;
 }
@@ -161,27 +179,38 @@ a {
     transform: scale(1.5) translateX(10px);
 }
 
-.sidebar ul {
-    position: relative;
-    left: -30px;
-    list-style-type: none;
-}
+/* About Me Section Styling */
 
-.sidebar {
-    margin: 20px 20px 0px 0px;
-    border-radius: 0 35px 35px 0;
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.about-me h2 {
+    font-size: 2rem;
+    color: var(--teal);
+    margin: 20px auto 40px;
     width: fit-content;
-    background-color: var(--peach);
-    color: white;
-    transition-duration: 1s;
-    transition-property: background-color, color, padding, box-shadow;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 5px solid var(--muted);
 }
 
-.contact-info, .bio {
-    margin: 2em 0 2em;
-    transition-duration: 0.5s;
-    transition-property: padding, color, font-size;
+.about-me p {
+    color: var(--blackboard);
+    background-color: var(--muted);
+    width: 100%;
+    border-radius: 35px;
+
 }
+
+
+
+
+
 
 /* nav/ Project Listing Styling */
 
@@ -291,6 +320,7 @@ hr {
     border-radius: 5px;
     background-color: grey;
 }
+
 /* Project Content Section Styling */
 
 .project-content {
@@ -322,7 +352,6 @@ hr {
     padding-bottom: 25px;
     transition-duration: 1s;
     transition-property: width, padding, box-shadow, border;
-    
 }
 
 .wrapper-3 {
@@ -496,7 +525,7 @@ hr {
     background-color: white;
 }
 
-.repo-link {
+.webpage-link {
     margin-top: 20px;
     padding: 10px 27px 10px 42px;
     border-radius: 25px;
@@ -517,23 +546,23 @@ hr {
     }
 }
 
-.repo-link::after {
+.webpage-link::after {
     content: ' >>';
     opacity: 0;
 }
 
-.repo-link:hover::after {
+.webpage-link:hover::after {
     animation-name: appear;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.repo-link:hover {
+.webpage-link:hover {
     padding: 10px 45px;
 }
 
-.repo-link:active {
+.webpage-link:active {
     color: grey;
     background-color: white;
 }
@@ -649,34 +678,39 @@ footer:hover::after {
 
     .sidebar {
         width: 100%;
-        margin: 10px auto 20px;
+        margin: 20px auto 20px;
         border-radius: 35px;
 
     }
+
+   .social-media {
+        align-items: center;
+   }
+
     .social-media > h4  {
         font-size: 1.5em;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    .bio > h4 {
+    .resume > h4 {
         font-size: 1.5em;
-        margin: 0px auto;
+        margin: 10px auto;
     }
 
     .contact-info > h4 {
         font-size: 1.5em;
-        margin: 0px auto;
+        margin: 10px auto;
     }
 
     .social-media-account > li {
         display: inline;
-        margin: 0px 5px;
+        margin: 0px 3px;
    
     }
 
     #instagram {
-        margin-left: 40px;
+        margin-left: 0px;
     }
 
     .project-listing {
