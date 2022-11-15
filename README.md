@@ -1,17 +1,16 @@
-# Challenge 1: Code Refactoring
+# Mini Project: Portfolio
 
 ## Description
 
-I was given a starter code and stylesheet of a webpage to refactor so that both the html and the css look cleaner and more accessible.
-I did this by changing some non-semantic tags into semantic tags in html, adding alt attributes to images, and combining some selectors in css. 
-I also made the page more mobile-friendly by refactoring the display properties and by utilizing media queries.
-Lastly, I put in a drop-down menu with JavaScript for mobile users so they can click on an icon to view the three links.
+This webpage aims to showcase what I have learned to far at Bootcamp and the projects/ class challenges we've done so far. There are also two placeholders in the project section for my future work. On the sidebar there are links to my social media, my resume (coming soon), and my contact information. The main section is comprised of the About Me section, the Project Listing section (which consists of buttons with which users can nagivate to specific projects below), and the actual projects/ upcoming projects, which include project titles, screenshots of the deployed webpages, and project descriptions. There is also a side button for users to get back to the top of the webpage without scrolling all the way back up. At the very bottom of the main section I've included a link to my GitHub profile for users who'd like to check out more of my current and future projects. This webpage is mobile-friendly and tablet friendly, with the help of media queies I set up in the css file. 
 
-The URL of the deployed, refactored webpage is can be found at: https://feddericowayne.github.io/Challenge-1-Refactoring/
+The URL of the deployed portfolio webpage is: 
+https://feddericowayne.github.io/mini-project-portfolio/
 
 Here's a screenshot of the webpage:
 
-![image](./assets/images/webpage-screenshot.jpg)
+![image](./Assets/images/porfolio-webpage-screenshot.png)
+
 
 ## Installation
 
@@ -19,8 +18,7 @@ N/A
 
 ## Usage
 
-This webpage comes with an html file, a css stylesheet, and a JavaScript file for the drop-down menu.
-The links on top of the page will take users to specific sections of the webpage.
+This webpage comes with an html file, a css stylesheet, and image assets for the webpage.
 
 ## Credits
 
