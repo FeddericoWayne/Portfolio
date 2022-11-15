@@ -681,7 +681,7 @@ footer:hover::after {
 
 /* Media Queries for Tables */
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:825px) {
     .wrapper-1 {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1085,7 +1085,7 @@ footer:hover::after {
         top:75%;
         height:fit-content;
     }
-    
+
     footer {
         box-shadow: var(--box-shadowing-pink);
         border-radius: 10px;
