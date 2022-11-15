@@ -682,6 +682,22 @@ footer:hover::after {
 /* Media Queries for Tables */
 
 @media screen and (max-width:825px) {
+    .contact-info:active {
+        font-size: 1.5em;
+    }
+
+    .contact-info:active #email {
+        display: flex;
+    }
+    
+    .contact-info:active #phone {
+        display: flex;
+    }
+    
+    .contact-info:active #address {
+        display: flex;
+    }
+
     .wrapper-1 {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -882,6 +898,22 @@ footer:hover::after {
         margin: 10px auto;
     }
 
+    .contact-info:active {
+        font-size: 1.5em;
+    }
+
+    .contact-info:active #email {
+        display: flex;
+    }
+    
+    .contact-info:active #phone {
+        display: flex;
+    }
+    
+    .contact-info:active #address {
+        display: flex;
+    }
+    
     .contact-info > h4 {
         font-size: 1.5em;
         margin: 10px auto;
