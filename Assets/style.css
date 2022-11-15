@@ -225,10 +225,6 @@ a {
 }
 
 
-
-
-
-
 /* nav/ Project Listing Styling */
 
 .projects {
@@ -343,8 +339,9 @@ hr {
 
 .project-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     row-gap: 1rem;
     column-gap: 1rem;
@@ -352,7 +349,7 @@ hr {
 
 .wrapper-1 {
     width: 80%;
-    height:fit-content;
+    height: fit-content;
     background-color: var(--salmon);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 35px 0 35px 0;
@@ -362,8 +359,8 @@ hr {
 }
 
 .wrapper-2 {
-    width: 80%;
-    height:fit-content;
+    width: 45%;
+    height: fit-content;
     background-color: var(--peach);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 0px 35px 0px 35px;
@@ -373,8 +370,8 @@ hr {
 }
 
 .wrapper-3 {
-    width: 80%;
-    height:fit-content;
+    width: 45%;
+    height: fit-content;
     background-color: var(--pink);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 35px 0 35px 0;
@@ -384,8 +381,8 @@ hr {
 }
 
 .wrapper-4 {
-    width: 80%;
-    height:fit-content;
+    width: 45%;
+    height: fit-content;
     background-color: var(--muted);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 0px 35px 0px 35px;
@@ -395,8 +392,8 @@ hr {
 }
 
 .wrapper-5 {
-    width: 80%;
-    height:fit-content;
+    width: 45%;
+    height: fit-content;
     background-color: var(--teal);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 35px 0 35px 0;
@@ -406,8 +403,8 @@ hr {
 }
 
 .wrapper-6 {
-    width: 80%;
-    height:fit-content;
+    width: 45%;
+    height: fit-content;
     background-color: var(--blackboard);
     border: 5px solid rgba(128, 128, 128, 0.6);
     border-radius: 0px 35px 0px 35px;
@@ -427,10 +424,18 @@ hr {
     transition-property: background-color, color;
 }
 
-.project-content div:hover {
+.project-content:hover #featured-project {
     padding-top: 25px;
     padding-bottom: 25px;
     width: 95%;
+    box-shadow: 8px 8px 8px grey;
+
+}
+
+.project-content div:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 50%;
     box-shadow: 8px 8px 8px grey;
 
 }
@@ -518,7 +523,7 @@ hr {
     border: 5px solid rgba(255, 255, 255);
 }
 
-.wrapper-1:hover .project-title {
+#featured-project:hover .project-title {
     color: grey;
     background-color: white;
 }
@@ -718,14 +723,29 @@ footer:hover::after {
         background-color: white;
     }
 
+    .project-content div:hover {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 95%;
+        box-shadow: 8px 8px 8px grey;
+    }
+
+    .project-content div:active {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 95%;
+        box-shadow: 8px 8px 8px grey;
+    }
+
     .wrapper-2 {
         padding-top: 25px;
         padding-bottom: 25px;
         box-shadow: 8px 8px 8px grey;
         border: 5px solid rgba(255, 255, 255);
         transition: none;
-        width: 95%;
+        width: 75%;
     }
+
     .wrapper-2 img {
         transition: none;
         max-width: 90%;
@@ -744,7 +764,7 @@ footer:hover::after {
         box-shadow: 8px 8px 8px grey;
         border: 5px solid rgba(255, 255, 255);
         transition: none;
-        width: 95%;
+        width:75%;
     }
     .wrapper-3 img {
         transition: none;
@@ -764,7 +784,7 @@ footer:hover::after {
         box-shadow: 8px 8px 8px grey;
         border: 5px solid rgba(255, 255, 255);
         transition: none;
-        width: 95%;
+        width: 75%;
     }
     .wrapper-4 img {
         transition: none;
@@ -784,7 +804,7 @@ footer:hover::after {
         box-shadow: 8px 8px 8px grey;
         border: 5px solid rgba(255, 255, 255);
         transition: none;
-        width: 95%;
+        width: 75%;
     }
     .wrapper-5 img {
         transition: none;
@@ -804,7 +824,7 @@ footer:hover::after {
         box-shadow: 8px 8px 8px grey;
         border: 5px solid rgba(255, 255, 255);
         transition: none;
-        width: 95%;
+        width: 75%;
     }
     .wrapper-6 img {
         transition: none;
@@ -913,7 +933,7 @@ footer:hover::after {
     .contact-info:active #address {
         display: flex;
     }
-    
+
     .contact-info > h4 {
         font-size: 1.5em;
         margin: 10px auto;
@@ -981,7 +1001,6 @@ footer:hover::after {
         padding: 10px 50px 10px 50px;
         box-shadow: none;
     }
-
     
     .wrapper-1 {
         padding-top: 25px;
