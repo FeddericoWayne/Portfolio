@@ -1,4 +1,4 @@
-/* variants */
+/* Variables */
 
 :root {
     --salmon: #FE8268;
@@ -11,6 +11,8 @@
     --box-shadowing-pink: 6px 6px 3px grey, inset 7px 7px 6px rgb(255, 239, 246);
     --box-shadowing-blue: 6px 6px 3px grey, inset 7px 7px 6px rgb(211, 226, 255);
 }
+
+/* Overall Webpage Styling */
 
 * {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
@@ -61,6 +63,8 @@ header img {
     transition-property: width, box-shadow;
 }
 
+/* Header Interactivity */
+
 header:hover {
     box-shadow: var(--box-shadowing-blue);
     border-radius: 10px;
@@ -85,7 +89,7 @@ main {
     height: 100%;
 }
 
-/* Sidebar Styling */
+/* Interactive Sidebar Styling */
 
 .sidebar {
     margin: 20px 20px 0px 0px;
@@ -115,7 +119,7 @@ main {
 
  .sidebar:hover li {
     color: grey;
- }
+}
 
 .sidebar:hover #resume {
     color: grey;
@@ -156,7 +160,6 @@ a {
     display: flex;
 }
 
-
 .social-media > h4 {
     margin: 2em 0 1em;
     transition-duration: 1s;
@@ -189,6 +192,7 @@ a {
     row-gap: 1rem;
     column-gap: 1rem;
 }
+
 .about-me h2 {
     font-size: 2rem;
     color: var(--teal);
@@ -224,8 +228,7 @@ a {
     width: 90%;
 }
 
-
-/* nav/ Project Listing Styling */
+/* Interactive Project List Styling */
 
 .projects {
     display: flex;
@@ -506,6 +509,7 @@ hr {
 .wrapper-1:hover {
     border: 5px solid rgba(255, 255, 255);
 }
+
 .wrapper-2:hover {
     border: 5px solid rgba(255, 255, 255);
 }
@@ -513,12 +517,15 @@ hr {
 .wrapper-3:hover {
     border: 5px solid rgba(255, 255, 255);
 }
+
 .wrapper-4:hover {
     border: 5px solid rgba(255, 255, 255);
 }
+
 .wrapper-5:hover {
     border: 5px solid rgba(255, 255, 255);
 }
+
 .wrapper-6:hover {
     border: 5px solid rgba(255, 255, 255);
 }
@@ -527,26 +534,33 @@ hr {
     color: grey;
     background-color: white;
 }
+
 .wrapper-2:hover .project-title {
     color: grey;
     background-color: white;
 }
+
 .wrapper-3:hover .project-title {
     color: grey;
     background-color: white;
 }
+
 .wrapper-4:hover .project-title {
     color: grey;
     background-color: white;
 }
+
 .wrapper-5:hover .project-title {
     color: grey;
     background-color: white;
 }
+
 .wrapper-6:hover .project-title {
     color: grey;
     background-color: white;
 }
+
+/* Deployed Webpage Link Button Styling */
 
 .webpage-link {
     margin-top: 20px;
@@ -590,9 +604,7 @@ hr {
     background-color: white;
 }
 
-
-
-/* End of Page Links Styling */
+/* End of Page Link Styling */
 
 #github {
     font-size: 1rem;
@@ -617,10 +629,11 @@ hr {
     transform: translateY(4px);
 }
 
-/* Back-to-Top Button Styling */
 #end-of-page {
     margin: 45px auto;
 }
+
+/* Back-to-Top Button Styling */
 
 #back-to-top {
     font-size: 1rem;
@@ -645,8 +658,7 @@ hr {
     transform: translateY(4px);
 }
 
-
-/* Footer Styling */
+/* Interactive Footer Styling */
 
 footer {
     margin: 20px auto 0px;
@@ -711,6 +723,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-1 img {
         transition: none;
         max-width: 90%;
@@ -766,6 +779,7 @@ footer:hover::after {
         transition: none;
         width:75%;
     }
+
     .wrapper-3 img {
         transition: none;
         max-width: 90%;
@@ -786,6 +800,7 @@ footer:hover::after {
         transition: none;
         width: 75%;
     }
+
     .wrapper-4 img {
         transition: none;
         max-width: 90%;
@@ -806,6 +821,7 @@ footer:hover::after {
         transition: none;
         width: 75%;
     }
+
     .wrapper-5 img {
         transition: none;
         max-width: 90%;
@@ -826,6 +842,7 @@ footer:hover::after {
         transition: none;
         width: 75%;
     }
+
     .wrapper-6 img {
         transition: none;
         max-width: 90%;
@@ -876,7 +893,6 @@ footer:hover::after {
     }
 
 }
-
 
 /* Media Queries for Mobile */
 
@@ -949,7 +965,6 @@ footer:hover::after {
         margin-left: 0px;
     }
 
-
     .about-me p {
         transition: none;
         background-color: white;
@@ -1010,6 +1025,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-1 img {
         transition: none;
         max-width: 90%;
@@ -1030,6 +1046,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-2 img {
         transition: none;
         max-width: 90%;
@@ -1050,6 +1067,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-3 img {
         transition: none;
         max-width: 90%;
@@ -1090,6 +1108,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-5 img {
         transition: none;
         max-width: 90%;
@@ -1110,6 +1129,7 @@ footer:hover::after {
         transition: none;
         width: 95%;
     }
+
     .wrapper-6 img {
         transition: none;
         max-width: 90%;
