@@ -12,6 +12,10 @@
     --box-shadowing-blue: 6px 6px 3px grey, inset 7px 7px 6px rgb(211, 226, 255);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Overall Webpage Styling */
 
 * {
@@ -275,7 +279,7 @@ a {
     transform: translateY(4px);
 }
 
-#code-refactor-link {
+#meowmatch-link {
     font-size: 1.5em;
     color: var(--keylime);
     background-color: var(--blackboard);
@@ -285,10 +289,20 @@ a {
 
 }
 
-#sign-up-page-design-link {
+#code-refactor-link {
     font-size: 1.5em;
     color: var(--keylime);
     background-color: var(--teal);
+    padding: 10px 130px 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+#sign-up-page-design-link {
+    font-size: 1.5em;
+    color: var(--keylime);
+    background-color: var(--muted);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
     cursor: pointer;
@@ -297,7 +311,7 @@ a {
 #css-cheatsheet-link {
     font-size: 1.5em;
     color: var(--keylime);
-    background-color: var(--muted);
+    background-color: var(--pink);
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
     cursor: pointer;
@@ -306,25 +320,34 @@ a {
 #personal-portfolio-link {
     font-size: 1.5em;
     color: var(--keylime);
-    background-color: var(--pink);
+    background-color: var(--peach);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
     cursor: pointer;
 }
 
-#javascript-project-link {
+#weather-dashboard-link {
     font-size: 1.5em;
     color: var(--keylime);
-    background-color: var(--peach);
+    background-color: var(--salmon);
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
     cursor: pointer;
 }
 
-#upcoming-project-link {
+#JavaScript-quiz-link {
     font-size: 1.5em;
     color: var(--keylime);
-    background-color: var(--salmon);
+    background-color: var(--peach);
+    padding: 10px 10px 10px 130px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#workday-scheduler-link {
+    font-size: 1.5em;
+    color: var(--keylime);
+    background-color: var(--pink);
     padding: 10px 10px 10px 130px;
     border-radius: 15px;
     cursor: pointer;
