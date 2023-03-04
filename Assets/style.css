@@ -279,6 +279,15 @@ a {
     transform: translateY(4px);
 }
 
+#health-bar-link {
+    font-size: 1.5em;
+    color: var(--keylime);
+    background-color: var(--teal);
+    padding: 10px 130px 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 #meowmatch-link {
     font-size: 1.5em;
     color: var(--keylime);
@@ -286,7 +295,6 @@ a {
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
     cursor: pointer;
-
 }
 
 #code-refactor-link {
@@ -296,7 +304,6 @@ a {
     padding: 10px 130px 10px 10px;
     border-radius: 15px;
     cursor: pointer;
-
 }
 
 #sign-up-page-design-link {
